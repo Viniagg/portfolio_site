@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+{% block content %}
+<h1>Contact</h1>
+
+{% if success %}
+<p style="color: green;">Message sent successfully!</p>
+{% endif %}
+
+<form method="post">
+    <input name="name" placeholder="Your Name" required>
+    <input name="email" placeholder="Email" required>
+    <textarea name="message" placeholder="Message" required></textarea>
+    <button type="submit">Send</button>
+</form>
+{% endblock %}

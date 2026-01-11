@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+{% block content %}
+<h1>Contact Messages</h1>
+
+<table border="1">
+    <tr>
+        <th>ID</th>
+        <th>Name</th>
+        <th>Email</th>
+        <th>Message</th>
+    </tr>
+    {% for m in messages %}
+    <tr>
+        <td>{{ m[0] }}</td>
+        <td>{{ m[1] }}</td>
+        <td>{{ m[2] }}</td>
+        <td>{{ m[3] }}</td>
+    </tr>
+    {% endfor %}
+</table>
+{% endblock %}
